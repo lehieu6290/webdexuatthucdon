@@ -1,0 +1,209 @@
+body{
+	font-family: Arial, sanse-rif;
+	position: relative;
+	min-height: 100vh;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header, footer{
+	box-sizing: border-box;
+	width: 100%;
+	background-color:  #ff66ff;
+	padding: 10px;
+}
+
+footer{
+	position: absolute;	
+	bottom: 0;
+	height: 60px;
+}
+
+.logo{
+	width: 50px;
+}
+
+.center{
+	width: 820px;
+	margin: auto;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link{
+	color: black;
+}
+
+.link:hover{
+	color: gray;
+}
+
+.control-container{
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 0 3px 0 black;
+	display: none;
+}
+
+.hidden-container{
+	position: absolute;
+	background-color: white;
+	box-shadow: 0 0 3px 0 black;
+	display: none;
+	left: 0;
+	top: 100%;
+}
+
+.control-container a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 10px;
+	color: black;
+}
+
+.hidden-container a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 10px;
+	color: black;
+}
+
+.control-container a:hover{
+	background-color: #e0e0eb;
+
+}
+
+.hidden-container a:hover{
+	background-color: #e0e0eb;
+
+}
+
+.user-name{
+	cursor: pointer;
+	color: white;
+	font-size: 18px;
+}
+
+.user-name:hover + .control-container{
+	display: block;
+}
+
+.control-container:hover{
+	display: block;
+}
+
+input, select{
+	font-size: 16px;
+	padding: 5px;
+}
+
+select{
+	cursor: pointer;
+}
+
+content{
+	padding: 20px;
+}
+
+.submit{
+	border: none;
+	background-color: #ff66ff;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+	position: relative;
+}
+
+.submit:hover{
+	background-color: #e0e0eb;
+}
+
+.form td{
+	padding: 10px;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 70px;
+}
+
+.icon{
+	width: 20px;
+	display: inline-block;
+	padding: 0 7px;
+}
+
+.table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.table th{
+	border: 1px solid black;
+	padding: 10px;
+	background-color: #ff66ff;
+}
+
+.table td{
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.submit:hover .hidden-container{
+	display: block;
+}
+
+span.submit{
+	margin: 5px;
+}
+
+#ketquatimkiem{
+	max-height: 100px;
+	overflow-y: scroll;
+	box-shadow: 0 0 3px 0 black;
+}
+
+#ketquatimkiem p{
+	padding: 5px;
+	cursor: pointer;
+}
+
+#ketquatimkiem p:hover{
+	background-color: #e0e0eb;
+}
+
+#tennguyenlieu{
+	padding: 3px;
+}
+
+#tennguyenlieu span{
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	background-color: silver;
+	margin-right: 2px;
+}
+
+#tennguyenlieu span:hover{
+	background-color: #e0e0eb;
+}
+
+#tennguyenlieu span:hover::after{
+	content: " x";
+}
+
+#themnguyenlieu-btn{
+	text-decoration: underline;
+	cursor: pointer;
+}

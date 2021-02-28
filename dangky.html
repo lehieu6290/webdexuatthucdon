@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng ký tài khoản</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="hinhanh/hethong/logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="center">
+			<div class="flex-container">
+				<div class="flex-container">
+					<a href="index.php"><img src="hinhanh/hethong/logo.png" class="logo"></a>
+					<h1 class="title">Hệ thống đề xuất thực đơn</h1>
+				</div>
+				<div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="center">
+		<h2 style="text-align: center; margin: 10px;">Nhập đầy đủ thông tin để đăng ký</h2>
+		<div class="flex-center">
+			<form action="dangky.php" method="post">
+				<table class="form">
+					<tr>
+						<td><span>Tên đăng nhập</span></td>
+						<td><input type="text" name="tendangnhap" autocomplete="off"></td>
+					</tr>
+					<tr>
+						<td><span>Mật khẩu</span></td>
+						<td><input type="password" name="matkhau1" autocomplete="off"></td>
+					</tr>
+					<tr>
+						<td><span>Nhập lại mật khẩu</span></td>
+						<td><input type="password" name="matkhau2" autocomplete="off"></td>
+					</tr>
+					<tr>
+						<td><span>Họ và tên</span></td>
+						<td><input type="text" name="tennguoidung" autocomplete="off"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="submit" name="dangky" value="Đăng ký" class="submit">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p>Đã có tài khoản? <a href="dangnhap.html" class="link">Đăng nhập</a></p>
+						</td>
+					</tr>
+				</table>
+			</form>	
+		</div>
+	</div>
+	
+	<footer>
+		<div class="center">
+			<div class="flex-container">
+				<div>
+					<p>Giảng viên hướng dẫn</p>
+					<p>TS Lâm Nhựt Khang</p>
+				</div>
+				<div>
+					<p>Sinh viên thực hiện</p>
+					<p>Lê Trung Hiếu</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
